@@ -1,0 +1,16 @@
+Classe Package Private (Pacote Privado)
+
+Classe Interna: É reconhecida por outras classes no mesmo pacote/arquivo.
+Não é necessário utilizar um modificador de acesso (Public, Private).
+
+Modificadores de Acesso:
+
+Definem quem poderá utilizar os elementos (métodos/atributos/classes).
+
+Public: Qualquer classe pode acessar o elemento/método/atributo.
+
+Private: Apenas a própria classe consegue acessar os métodos/atributos.
+
+Protect: Utilizamos em duas ocasiões: classes do mesmo pacote irão enxergar o elemento ou quando classes herdam métodos/atributos de uma classe pai/superclasse.
+
+Package Private (Pacote Privado): Classe Default/Padrão, representa uma classe interna que é visível para a classe pública ou demais classes no pacote.
