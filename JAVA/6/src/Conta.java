@@ -18,8 +18,14 @@ if (deposito > 0){
 class Poupança extends Conta {//classe poupança herda classe conta
     //Método render
 
-    public void render(){
-       saldo+= saldo *=0.05f;
-        System.out.printf("\n\nSaldo final (Saldo+Rendimento): R$ %.2f", saldo);
+    public void rendimento(float render){
+        if (render > 0){
+            render = render/100;
+            saldo += saldo * render;
+        System.out.printf("\n\nOperação realizada|Saldo final (Saldo+Rendimento): R$ %.2f", saldo);
+        }
+        else{
+            System.out.printf("\n\nOperação não realizada|Saldo final: R$ %.2f", saldo);
+        }
     }
 }
